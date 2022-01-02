@@ -1,0 +1,16 @@
+Pawełkiewicz: (Wszystko jest w filmiku - https://www.youtube.com/watch?v=2HQC94la6go )
+1. https://dev.mysql.com/downloads/ -> wybieramy  MySQL Installer for Windows
+2. W instalerze zaznaczamy custom a później:	
+	1. MySQL Server
+	2. MySQL Workbench
+	3. Connector/ODBC
+
+
+MySQL server: 
+port: 3306
+user: root
+password: root
+
+3. Logujemy się do serwera za pomocą MySQL Workbench
+4. instalujemy nodemon za pomocą: npm install -g nodemon
+5. Włączamy server JS: nodemon server.js

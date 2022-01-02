@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "b6785d42-50aa-4624-a643-042864f79558",
+		"name": "PSK local endpoint",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PSK is App running",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSK POST addNewClient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Login\": \"1\",\r\n    \"Password\": \"1\",\r\n    \"Height\": 120.10,\r\n    \"Width\": 120.10,\r\n    \"Goal\": 10000,\r\n    \"Birthday\": \"2021-10-10\",\r\n    \"Gender\": \"Woman\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8090/addNewClient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"addNewClient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSK GET getClientById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/getClientById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"getClientById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSK GET login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\": \"1\",\r\n    \"password\": \"1\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8090/loginClient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"loginClient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSK POST updateClient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": \"1\",\r\n    \"Login\": \"2\",\r\n    \"Password\": \"2\",\r\n    \"Height\": 120.10,\r\n    \"Width\": 120.10,\r\n    \"Goal\": 10000,\r\n    \"Birthday\": \"2021-10-10\",\r\n    \"Gender\": \"Woman\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8090/updateClient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"updateClient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSK GET createWorkoutResult",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Type\": \"Walk\",\r\n    \"StepAmmount\": 20000,\r\n    \"StartDate\": \"2022-01-02 22:22:00\",\r\n    \"EndDate\": \"2022-01-02 23:22:00\",\r\n    \"ClientId\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8090/createWorkoutResults",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"createWorkoutResults"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PSK GET getWorkoutResults",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/getWorkoutResults/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"getWorkoutResults",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
