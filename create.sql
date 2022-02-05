@@ -20,7 +20,7 @@ create table client (
 create table workout_result (
 	Id int NOT NULL auto_increment,
     Type varchar(255),
-    StepAmmount int,
+    StepAmount int,
     StartDate datetime,
     EndDate datetime,
     ClientId int,
